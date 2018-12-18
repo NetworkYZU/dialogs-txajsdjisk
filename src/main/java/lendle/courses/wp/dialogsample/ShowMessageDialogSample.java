@@ -5,6 +5,8 @@
  */
 package lendle.courses.wp.dialogsample;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author lendle
@@ -14,10 +16,28 @@ public class ShowMessageDialogSample extends javax.swing.JFrame {
     /**
      * Creates new form ShowMessageDialogSample
      */
+    
     public ShowMessageDialogSample() {
         initComponents();
     }
-
+    private void defaultButtonActionPerformed(java.awt.event.ActionEvent evt){
+        JOptionPane.showMessageDialog(this,"hello","",JOptionPane.DEFAULT_OPTION);
+    }
+    private void errorButtonActionPerformed(java.awt.event.ActionEvent evt){
+        JOptionPane.showMessageDialog(this,"hello","",JOptionPane.ERROR_MESSAGE);
+    }
+    private void informationButtonActionPerformed(java.awt.event.ActionEvent evt){
+        JOptionPane.showMessageDialog(this,"hello","",JOptionPane.INFORMATION_MESSAGE);
+    }
+    private void plainButtonActionPerformed(java.awt.event.ActionEvent evt){
+        JOptionPane.showMessageDialog(this,"hello","",JOptionPane.PLAIN_MESSAGE);
+    }
+    private void questionButtonActionPerformed(java.awt.event.ActionEvent evt){
+        JOptionPane.showMessageDialog(this,"hello","",JOptionPane.QUESTION_MESSAGE);
+    }
+    private void warningButtonActionPerformed(java.awt.event.ActionEvent evt){
+        JOptionPane.showMessageDialog(this,"hello","",JOptionPane.WARNING_MESSAGE);
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
